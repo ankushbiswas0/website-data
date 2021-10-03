@@ -2,6 +2,23 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				
+<script>
+$(document).ready(function() {
+var adsafter = document.getElementsByTagName("br");
+var mc = document.getElementById("awn-z5122195");
+var mcc = document.getElementById("awn-z5132403");
+
+  if (adsafter.length > 1){
+insertAfter(mc,adsafter[Math.floor(Math.random() * 15) + 1]);
+insertAfter(mcc,adsafter[Math.floor(Math.random() * adsafter.length) + 0]); 
+}
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling); 
+}
+});
+
+</script>
 
 </head>
 <body>
@@ -83,23 +100,6 @@ var urls={cdnUrls:["//superonclick.com","//geniusonclick.com"],cdnIndex:0,rand:M
 <br>
 
 
-				
-<script>
-$(document).ready(function() {
-var adsafter = document.getElementsByTagName("br");
-var mc = document.getElementById("awn-z5122195");
-var mcc = document.getElementById("awn-z5132403");
-
-  if (adsafter.length > 1){
-insertAfter(mc,adsafter[Math.floor(Math.random() * 15) + 1]);
-insertAfter(mcc,adsafter[Math.floor(Math.random() * adsafter.length) + 0]); 
-}
-function insertAfter(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling); 
-}
-});
-
-</script>
 
 <script>
 				(function($){
