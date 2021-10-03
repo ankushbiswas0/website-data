@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+var adsafter = document.getElementsByTagName("br");
+var mc = document.getElementById("multiads-content1");
+var mcc = document.getElementById("multiads-content2");
+
+  if (adsafter.length > 1){
+insertAfter(mc,adsafter[Math.floor(Math.random() * 15) + 1]);
+insertAfter(mcc,adsafter[Math.floor(Math.random() * adsafter.length) + 0]); 
+}
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling); 
+}
+});
+
+</script>
+
+
+</head>
+<body>
+								
+<br>
+<br>
+<br>
+<br>
+<p>This is a paragrugvyvaph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is ycyffya paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a uggugparagraph.</p>
+<br>
+<p>This iufygs a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<h3>What Can JavaScript Do?</h2>
+<p>This is a paragrugvyvaph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is ycyffya paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a uggugparagraph.</p>
+<br>
+<p>This iufygs a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<br>
+<p>This is a paragraph.</p>
+<h2>This is a Heading</h1>
+<h3>What Can JavaScript Do?</h2>
+
+
+<div id='multiads-content3'>CONVERTED ADS CODE HERE3</div>
+<div id='multiads-content1' >CONVERTED ADS CODE HERE1</div>
+<div id='multiads-content2'>CONVERTED ADS CODE HERE2</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+				
+
+<script>
+				(function($){
+ 
+    $.fn.shuffle = function() {
+ 
+        var allElems = this.get(),
+            getRandom = function(max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function(){
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+           });
+ 
+        this.each(function(i){
+            $(this).replaceWith($(shuffled[i]));
+        });
+ 
+        return $(shuffled);
+ 
+    };
+ 
+})(jQuery);
+
+$(function() {
+
+    $("#multiads-content3, #multiads-content2").shuffle();
+
+});
+
+$(function() {
+
+    $("#multiads-content1, #multiads-content3").shuffle();
+
+});
+
+</script>
+
+
+ 
+</body>
+</html>
